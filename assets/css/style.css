@@ -126,12 +126,77 @@ nav ul a {
     align-items: center;
     text-align: center;
 }
+/*Portfolio*/
+#portfolio div {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+#portfolio div a img  {
+    height: 400px;
+    width: 800px;
+    
+}
+#portfolio div a {
+    text-decoration: none;
+}
+#portfolio div a p {
+    font-size: 20px;
+    color: rgb(74, 156, 132);
+    
+    
+}
+#portfolio div a .big {
+    flex: 2;
+    margin: 50px 20px;
+    height: 500px;
+    width: 1000px;
+}
+#portfolio div a .norm {
+    flex: 1;
+    margin: 50px 50px;
+    
+}
+
+
+
+/*Misc*/
+#misc, #contact {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+#misc .center, #contact .center {
+    text-align: center;
+    margin-left: 45px;
+}
+#misc p, #contact p {
+    font-size: 20px;
+    color:rgb(74, 156, 132);
+    
+    
+}
+
 @media (max-width: 980px) {
     nav, .hero {
 
     }
     nav a, nav ul {
       
+    }
+    #portfolio div a .big {
+        width: 700px;
+        height: 350px;
+    }
+    #portfolio div a .norm {
+        height: 275px;
+        width: 550px;
     }
   }
 
@@ -153,6 +218,14 @@ nav ul a {
         width: 450px;
         margin-left: 90px;
     }
+    #portfolio div a .big {
+        width: 600px;
+        height: 300px;
+    }
+    #portfolio div a .norm {
+        width: 400px;
+        height: 200px;
+    }
   }
   @media screen and (max-width: 575px) {
     #About .family, #About .info {
@@ -161,6 +234,14 @@ nav ul a {
     #About .family img {
         width: 300px;
         margin-left: 37px;
+    }
+    #portfolio div a .big {
+        width: 350px;
+        height: 175px;
+    }
+    #portfolio div a .norm {
+        width: 275px;
+        height: 140px;
     }
 
   }
